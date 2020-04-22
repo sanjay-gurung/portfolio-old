@@ -16,7 +16,7 @@ const SOCIAL_PROFILES = [
     },
     {
         id: 3,
-        link: 'https://github.com/sanjay',
+        link: 'https://github.com/sanjay-gurung',
         image: githubIcon
     },
     {

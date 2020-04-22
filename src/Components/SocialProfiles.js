@@ -29,7 +29,7 @@ const SocialProfiles = () => {
             <div>
                 {
                     SOCIAL_PROFILES.map((socialProfile) => (
-                        <a key={socialProfile.id} href={socialProfile.link}>
+                        <a key={socialProfile.id} href={socialProfile.link} target="_blank">
                             <img src={socialProfile.image} style={{width: 40, height: 40, margin: 20}} />
                         </a>
                     ))

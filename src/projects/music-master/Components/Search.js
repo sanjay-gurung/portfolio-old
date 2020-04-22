@@ -22,9 +22,11 @@ class Search extends Component {
             <div>
                 <h2>Music Master</h2>
                 <input 
-                    placeholder='Enter an artist name' 
+                    id='searchInput'
+                    placeholder='Enter an artist or a band name' 
                     onChange={this.updateArtistQuery}
                     onKeyPress={this.handleKeyPress}
+                    style={{ width: '250px'}}
                 />
                 <button onClick={this.searchArtist}>Search</button>
             </div>

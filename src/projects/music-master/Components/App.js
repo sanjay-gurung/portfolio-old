@@ -9,7 +9,7 @@ class App extends Component{
     state = { artist: null, tracks: [] };
 
     componentDidMount() {
-        this.searchArtist('Elvis Presley')
+        this.searchArtist('Pink Floyd')
     }
 
     searchArtist = (artistQuery) => {
@@ -25,6 +25,7 @@ class App extends Component{
                 return null;
 
             })
+        document.getElementById('searchInput').value='';
     }
 
     getArtistTopTrack = () => {
