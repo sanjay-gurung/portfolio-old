@@ -11,9 +11,9 @@ import Music from './projects/music-master';
 const history = createBrowserHistory()
 
 ReactDOM.render(
-    <Router history={history}>
+    <Router history={history} basename={process.env.PUBLIC_URL}>
         <Switch>
-            <Route exact={true} path='/portfolio/' render={() => {return(<Header Component={App} />)}} />
+            <Route exact={true} path='/' render={() => {return(<Header Component={App} />)}} />
             <Route path='/jokes' render={() => {return(<Header Component={Jokes} />)}} />
             <Route path='/music-master' render={() => {return(<Header Component={Music}/>)}} />
         </Switch>
