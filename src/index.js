@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Switch, Route } from 'react-router-dom';
-import createBrowserHistory from 'history/createBrowserHistory';
+// import createBrowserHistory from 'history/createBrowserHistory';
 import App from './Components/App';
 import Jokes from './Components/Jokes';
 import './index.css';
 import Header from './Components/Header';
 import Music from './projects/music-master';
+import { createHashHistory } from 'history';
 
-const history = createBrowserHistory()
+const history = createHashHistory()
 
 ReactDOM.render(
     <Router history={history} basename={process.env.PUBLIC_URL}>
