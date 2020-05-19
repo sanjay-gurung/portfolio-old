@@ -20,15 +20,15 @@ class App extends Component{
             <div>
                 <img src={ProfilePic} className='profilePic' />
                 <h2>Hello!</h2>
-                <p>Welcome to my app.</p>
+                <p>Welcome to my portfolio.</p>
                 <p>My name is Sanjay Gurung.</p>
                 <Title />
                 <p>I look forward to working on a fun and challanging project</p>
                 {
                     this.state.showBio ? (
                         <div>
-                            <p> I live in Las Vegas.</p>
-                            <p> I have a beautiful wife and 2 awesome kids.</p>
+                            <p>I'm a motivated Front End developer specialized on Angular and React.</p>
+                            <p>Quality is my top priority as I came from a QA background. </p> 
                             <button onClick={this.toggleShowBio} className='button'>Collaps</button>
                         </div>
                     ): (

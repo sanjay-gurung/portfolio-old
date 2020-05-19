@@ -4,7 +4,7 @@ import PROJECTS from '../data/projects';
 class Project extends Component {
     render() {
         return (    
-            <div style={{display: 'inline-block', width: 400, padding: 20}}> 
+            <div style={{display: 'inline-block', width: 400, height: 400, padding: 20, verticalAlign: 'top' }}> 
                 <h3>{this.props.project.title} </h3>
                 <img src={this.props.project.image} alt='profile' style={{width: 250, height:150}}></img>
                 <p>{this.props.project.description}</p>
@@ -18,7 +18,7 @@ class Projects extends Component {
     render() {
         return (
             <div>
-                <h3> Highlighted Projects </h3>
+                <h3> Projects </h3>
                 <div>
                     {
                         PROJECTS.map((PROJECTS) => {

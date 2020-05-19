@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
 
 const TITLES = [
-    'a software developer.',
+    'a Front End developer',
     'an enthusiastic learner.',
     'an outdoor fun loving persion.',
     'a good team player.'
